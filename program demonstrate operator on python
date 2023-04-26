@@ -1,0 +1,142 @@
+a = 7
+b = 2
+
+
+print ('Sum: ', a + b)  
+
+
+print ('Subtraction: ', a - b)   
+
+
+print ('Multiplication: ', a * b)  
+
+
+print ('Division: ', a / b) 
+
+
+print ('Floor Division: ', a // b)
+
+
+print ('Modulo: ', a % b)  
+
+
+print ('Power: ', a ** b) 
+a = 3
+b = 5
+c = a + b
+print('sum',c)
+a = 9
+b = 5
+print(a > b)
+a = 9
+b = 5
+print(a < b)
+a = 9
+b = 5
+print(a == b)
+a = 9
+b = 5
+print(a != b)
+a = 9
+b = 5
+print(a >= b)
+a = 9
+b = 5
+print(a <= b)
+a = 3
+b = 5
+  
+
+a += b
+print(a)
+a = 10
+b = 4
+ 
+# Print bitwise AND operation
+print("a & b =", a & b)
+ 
+# Print bitwise OR operation
+print("a | b =", a | b)
+ 
+# Print bitwise NOT operation
+print("~a =", ~a)
+ 
+# print bitwise XOR operation
+print("a ^ b =", a ^ b)
+ 
+a = 10
+b = -10
+ 
+# print bitwise right shift operator
+print("a >> 1 =", a >> 1)
+print("b >> 1 =", b >> 1)
+ 
+a = 5
+b = -10
+ 
+# print bitwise left shift operator
+print("a << 1 =", a << 1)
+print("b << 1 =", b << 1)
+a = 10
+b = 10
+c = -10
+ 
+if a > 0 and b > 0:
+    print("The numbers are greater than 0")
+ 
+if a > 0 and b > 0 and c > 0:
+    print("The numbers are greater than 0")
+else:
+    print("Atleast one number is not greater than 0")
+a = 10
+b = 12
+c = 0
+ 
+if a or b or c:
+    print("Atleast one number has boolean value as True")
+else:
+    print("All the numbers have boolean value as False")
+    a = 10
+ 
+if not a:
+    print("Boolean value of a is True")
+ 
+if not (a%3 == 0 or a%5 == 0):
+    print("10 is not divisible by either 3 or 5")
+else:
+    print("10 is divisible by either 3 or 5")
+a, b = 10, 20
+ 
+# Copy value of a in min if a < b else copy b
+min = a if a < b else b
+ 
+print(min)
+
+Sum:  9
+Subtraction:  5
+Multiplication:  14
+Division:  3.5
+Floor Division:  3
+Modulo:  1
+Power:  49
+sum 8
+True
+False
+False
+True
+True
+False
+8
+a & b = 0
+a | b = 14
+~a = -11
+a ^ b = 14
+a >> 1 = 5
+b >> 1 = -5
+a << 1 = 10
+b << 1 = -20
+The numbers are greater than 0
+Atleast one number is not greater than 0
+Atleast one number has boolean value as True
+10 is divisible by either 3 or 5
+10
