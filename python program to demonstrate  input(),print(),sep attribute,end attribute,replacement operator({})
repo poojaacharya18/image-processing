@@ -1,0 +1,28 @@
+color = input("What color is rose?: ")
+print(color)
+#code for disabling the softspace feature
+print('G','F','G', sep='')
+ 
+#for formatting a date
+print('09','12','2016', sep='-')
+ 
+#another example
+print('pratik','geeksforgeeks', sep='@')
+print("Studytonight", end=' ')
+print("is awesome")
+string = "grrks FOR grrks"
+ 
+# replace all instances of 'r' (old) with 'e' (new)
+new_string = string.replace("r", "e" )
+ 
+print(string)
+print(new_string)
+ 
+ What color is rose?: red
+red
+GFG
+09-12-2016
+pratik@geeksforgeeks
+Studytonight is awesome
+grrks FOR grrks
+geeks FOR geeks
