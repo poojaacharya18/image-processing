@@ -1,0 +1,24 @@
+for letter in 'geeksforgeeks':
+    if letter == 'e' or letter == 's':
+        continue
+    print('Current Letter :', letter)
+for letter in 'geeksforgeeks':
+ 
+    # break the loop as soon it sees 'e'
+    # or 's'
+    if letter == 'e' or letter == 's':
+        break
+print('Current Letter :', letter)
+for letter in 'geeksforgeeks':
+    pass
+print('Last Letter :', letter)
+
+Current Letter : g
+Current Letter : k
+Current Letter : f
+Current Letter : o
+Current Letter : r
+Current Letter : g
+Current Letter : k
+Current Letter : e
+Last Letter : s
