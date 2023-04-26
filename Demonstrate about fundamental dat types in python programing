@@ -1,0 +1,20 @@
+x = "Hello World"
+ 
+print(x,'is a type of ',type(x))
+x = 50
+print(x,'is a type of ',type(x))
+
+x = 60.5
+print(x,'is a type of ',type(x))
+
+x = 3j
+print(x,'is a type of ',type(x))
+
+x=True
+print(x,'is a type of ',type(x))
+
+Hello World is a type of  <class 'str'>
+50 is a type of  <class 'int'>
+60.5 is a type of  <class 'float'>
+3j is a type of  <class 'complex'>
+True is a type of  <class 'bool'>
