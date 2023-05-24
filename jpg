@@ -1,0 +1,10 @@
+import os
+from os import listdir
+ 
+# get the path/directory
+folder_dir = "C:/Users/User/Pictures/Saved Pictures/pic"
+for images in os.listdir(folder_dir):
+ 
+    # check if the image ends with png
+    if (images.endswith(".jpg")):
+        print(images)
