@@ -1,0 +1,5 @@
+from PIL import Image
+filepath='C:/Users/User/Pictures/pjc.jpg'
+img=Image.open(filepath)
+new_image=img.resize((300,200))
+new_image
