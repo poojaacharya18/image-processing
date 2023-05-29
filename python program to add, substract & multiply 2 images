@@ -1,0 +1,52 @@
+add:
+from PIL import Image
+import matplotlib.pyplot as plt
+  
+# opening up of images
+img = Image.open("C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg")
+img1 = Image.open("C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg")
+img.size
+img1.size
+img_size = img.resize((250, 90))
+img1_size = img1.resize((250, 90))
+  
+# creating a new image and pasting 
+# the images
+img2 = Image.new("RGB", (500, 90), "white")
+  
+# pasting the first image (image_name,
+# (position))
+img2.paste(img_size, (0, 0))
+  
+# pasting the second image (image_name,
+# (position))
+img2.paste(img1_size, (250, 0))
+  
+plt.imshow(img2)
+
+substract:
+from PIL import Image, ImageChops
+  
+# Opening Images
+im = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg")
+im2 = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg")
+  
+# subtracting im and im2
+im3 = ImageChops.subtract(image1 = im, image2 = im2)
+  
+# showing resultant image
+im3.show()
+
+Multiply:
+from PIL import Image, ImageChops
+    
+# creating a image1 object
+im1 = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg")
+    
+# creating a image2 object
+im2 = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg")
+   
+# applying multiply method
+im3 = ImageChops.multiply(im1, im2)
+   
+im3.show()
