@@ -50,3 +50,19 @@ im2 = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60
 im3 = ImageChops.multiply(im1, im2)
    
 im3.show()
+
+add:
+import cv2
+import numpy as np
+
+img1 = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg')
+img2 = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg')
+#img2 = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg')
+print(img1.shape)
+print(img2.shape)  
+# Applying NumPy addition on images
+fimg = img1 + img2
+ 
+# Saving the output image
+cv2.imwrite('output.jpg', fimg)
+cv2.imshow('output.jpg', fimg)
