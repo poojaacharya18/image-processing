@@ -1,0 +1,33 @@
+#upsampling
+import cv2
+image=cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg')
+print('size  of image before pyrup:',image.shape)
+cv2.imshow('im1',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+image=cv2.pyrUp(image)
+print('size of image after pryup:',image.shape)
+cv2.imshow('Upsample',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+output:
+size  of image before pyrup: (1389, 1000, 3)
+size of image after pryup: (2778, 2000, 3)
+
+#down sampling
+import cv2
+image=cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg')
+print('size  of image before pyrup:',image.shape)
+cv2.imshow('im1',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+image=cv2.pyrDown(image)
+print('size of image after pryup:',image.shape)
+cv2.imshow('Upsample',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+output:
+size  of image before pyrup: (1389, 1000, 3)
+size of image after pryup: (695, 500, 3)
