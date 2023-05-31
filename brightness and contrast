@@ -1,0 +1,25 @@
+# This will import Image and ImageEnhance modules
+from PIL import Image, ImageEnhance
+  
+# Opening Image
+im = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg")
+  
+# Creating object of Brightness class
+im3 = ImageEnhance.Brightness(im)
+  
+# showing resultant image
+im3.enhance(5.0).show()
+
+
+
+# This will import Image and ImageEnhance modules
+from PIL import Image, ImageEnhance
+  
+# Opening Image
+im = Image.open(r"C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg")
+  
+# Creating object of Contrast class
+im3 = ImageEnhance.Contrast(im)
+  
+# showing resultant image
+im3.enhance(5.0).show()
