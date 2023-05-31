@@ -1,0 +1,24 @@
+from PIL import Image
+ 
+
+
+# Open the images to be blended
+image1 = Image.open('C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg')
+image2 = Image.open('C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg')
+
+# Resize the images to the same size
+image1 = image1.resize((800, 600))
+image2 = image2.resize((800, 600))
+
+# Convert images to same mode
+image1 = image1.convert('RGB')
+image2 = image2.convert('RGB')
+
+# Define the weight of each image
+alpha = 1.5
+
+# Blend the images together
+blended = Image.blend(image1, image2, alpha)
+
+# Save the blended image
+blended.save('blended_image5.jpg')
