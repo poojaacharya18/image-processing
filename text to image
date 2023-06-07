@@ -1,0 +1,12 @@
+import numpy as np
+import cv2
+
+image = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/plain-white-t-shirts-500x500.webp',1)
+
+position = (250,170)
+text=cv2.putText(image,"PUMA", position,cv2. FONT_HERSHEY_SCRIPT_COMPLEX   , 1, (0, 0, 0,250 ), 2) 
+cv2.imshow('shirt', image)
+img=cv2.addWeighted(image,0.9,text,1.0,1.0)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+print(image.shape)
