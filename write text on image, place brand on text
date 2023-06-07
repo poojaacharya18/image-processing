@@ -1,0 +1,37 @@
+import numpy as np
+import cv2
+
+image = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/mister_fab_golden_yello_plain_t-shirt.webp',cv2.IMREAD_UNCHANGED)
+
+position = (575,250)
+cv2.putText(
+     image, #numpy array on which text is written
+     "PUMA", #text
+     position, #position at which writing has to start
+    cv2.FONT_HERSHEY_COMPLEX_SMALL , #font family
+     2, #font size
+     (0, 0, 0, 255), #font color
+     2) #font stroke
+cv2.imshow('shirt', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+print(image.shape)
+
+
+import numpy as np
+import cv2
+
+image = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg',cv2.IMREAD_UNCHANGED)
+
+position = (150,150)
+cv2.putText(image,                            # numpy array on which text is written
+            "Rose",                           #text
+            position,                         #position at which writing has to start
+            cv2. FONT_ITALIC ,                #font family
+            3,                                #font size
+            (15,56 ,30 , 140),                #font color
+             7)                                       #font stroke
+cv2.imshow('pooja',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+image.shape
