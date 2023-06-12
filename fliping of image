@@ -1,0 +1,22 @@
+# import required image module
+from PIL import Image
+
+# Open an already existing image
+imageObject = Image.open("C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg")
+
+# Do a flip of left and right
+hori_flippedImage = imageObject.transpose(Image.FLIP_LEFT_RIGHT)
+# Do a flip of left and right
+
+Vert_flippedImage = imageObject.transpose(Image.FLIP_TOP_BOTTOM)
+degree_flippedImage = imageObject.transpose(Image.ROTATE_90)
+
+
+
+# Show the original image
+imageObject.show()
+
+# Show the horizontal flipped image
+hori_flippedImage.show()
+Vert_flippedImage.show()
+degree_flippedImage.show()
