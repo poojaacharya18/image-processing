@@ -20,3 +20,25 @@ imageObject.show()
 hori_flippedImage.show()
 Vert_flippedImage.show()
 degree_flippedImage.show()
+
+using cv2:
+# import required library
+import cv2
+
+# read input image
+img = cv2.imread('C:/Users/User/Pictures/Saved Pictures/pic/Sunflower_from_Silesia2.jpg')
+
+# flip the image by vertically
+img_v = cv2.flip(img, 0)
+
+# display the rotated image
+
+
+img_h = cv2.flip(img, 1)
+
+# display the rotated image
+cv2.imshow('image',img)
+cv2.imshow("Horizontal Flip", img_h)
+cv2.imshow("Vertical Flip", img_v)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
