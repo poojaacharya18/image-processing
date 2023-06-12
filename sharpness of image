@@ -1,0 +1,10 @@
+from PIL import Image, ImageFilter
+
+# Open the image
+image = Image.open("C:/Users/User/Pictures/Saved Pictures/pic/photo-1562690868-60bbe7293e94.jpg")
+image.show()
+# Sharpen the image
+sharpened_image = image.filter(ImageFilter.SHARPEN)
+
+# Save the resulting image
+sharpened_image.show()
