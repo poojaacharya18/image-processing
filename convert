@@ -1,0 +1,17 @@
+# importing image class from PIL package
+from PIL import Image
+import matplotlib.pyplot as plt
+# creating image object
+img = Image.open(r"C:/Users/User/Downloads/logo.jpg")
+plt.imshow(img)
+plt.show()
+  
+# using convert method for img1
+img1 = img.convert("L")
+plt.imshow(img1)
+plt.show()
+  
+# using convert method for img2
+img2 = img.convert("1")
+plt.imshow(img2)
+plt.show()
