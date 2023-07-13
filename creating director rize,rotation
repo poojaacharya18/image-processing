@@ -1,0 +1,57 @@
+from PIL import Image 
+import os
+os.getcwd()
+output:
+'C:\\Users\\User'
+
+os.listdir()
+output:
+['.anaconda',
+ '.android',
+ '.conda',
+ '.condarc',
+ '.continuum',
+ '.emulator_console_auth_token',
+ '.gradle',
+ '.idlerc',
+ '.ipynb_checkpoints',
+ '.ipython',
+ '.jupyter',
+ '.keras',
+ '.keras-ocr',
+ '.librarymanager',
+ '.m2',
+ '.matplotlib',
+ '.nuget',
+ '.templateengine',
+
+  os.mkdir('NewExtnsn')
+for f in os.listdir("."):
+    if f.endswith(".jpg"):
+        i = Image.open(f)
+        fn, fext = os.path.splitext(f)
+        i.save("NewExtnsn/{}.pdf".format(fn))
+
+os.makedirs('resize//small1')
+os.makedirs('resize//tiny1')
+
+size_small = (600,600) # small images of 600 X 600 pixels
+size_tiny = (200,200) # tiny images of 200 X 200 pixels
+for f in os.listdir("."):
+    if f.endswith(".jpg"):
+        i = Image.open(f)
+        fn, fext = os.path.splitext(f)
+        i.thumbnail(size_small)
+        i.save("resize/small1/{}_small{}".format(fn, fext))
+        i.thumbnail(size_tiny)
+        i.save("resize/tiny1/{}_tiny{}".format(fn, fext))
+
+os.mkdir('rotate1')
+
+for f in os.listdir("."):
+    if f.endswith(".jpg"):
+        i = Image.open(f)
+        fn, fext = os.path.splitext(f)
+        im = i.rotate(90)
+        im.save("rotate1/{}_rot.{}".format(fn, fext))
+
