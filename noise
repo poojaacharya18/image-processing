@@ -1,0 +1,50 @@
+noise image:
+import matplotlib.pyplot as plt
+from skimage.util import random_noise
+nature_image=plt.imread('C:/Users/User/Pictures/pjc.jpg')
+noisy_image=random_noise(nature_image)
+plt.title('Original image')
+plt.imshow(nature_image)
+plt.show()
+plt.title('Noisy image')
+plt.imshow(noisy_image)
+plt.show()
+
+reduce noise:
+import matplotlib.pyplot as plt
+from skimage.restoration import denoise_tv_chambolle
+noisy_image=plt.imread('C:/Users/User/Pictures/pjc.jpg')
+denoised_image=denoise_tv_chambolle(noisy_image,multichannel=True)
+plt.title('Noisy image')
+plt.imshow(noisy_image)
+plt.show()
+plt.title('Clear image')
+plt.imshow(denoised_image)
+plt.show()
+
+denoised image:
+import matplotlib.pyplot as plt
+from skimage.restoration import denoise_bilateral
+landscape_image=plt.imread('C:/Users/User/Pictures/pjc.jpg')
+denoised_image=denoise_bilateral(landscape_image,multichannel=True)
+plt.title('Noisy image')
+plt.imshow(landscape_image)
+plt.show()
+plt.title('Denoised image')
+plt.imshow(denoised_image)
+plt.show()
+ 
+damaged image:
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+
+img = cv2.imread('C:/Users/User/Downloads/cat_damaged.png')
+plt.title('damaged image')
+plt.imshow(img)
+plt.show()
+mask = cv2.imread('C:/Users/User/Downloads/cat_mask.png', 0)
+dst = cv2.inpaint(img, mask, 3, cv2.INPAINT_NS)
+plt.title('restored img')
+plt.imshow(dst)
+plt.show()
